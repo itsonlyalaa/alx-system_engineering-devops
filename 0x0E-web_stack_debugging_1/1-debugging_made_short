@@ -2,4 +2,4 @@
 #Nginx server listen to port 80
 sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
 sudo service nginx restart
-pkill -1 nginx
+pkill -f --signal 1 "/usr/sbin/nginx"
